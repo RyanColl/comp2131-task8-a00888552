@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Monofett|Montserrat:400,700');
+body {
+  display: flex;
+  justify-content: center;
+}
+#main {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  overflow: hidden;
+  max-width: 1180px;
+  width: 1180px;
+  height: 736px;
+}
+#slanted {
+  background: red;
+  transform: skewX(-32.5deg);
+  grid-column: 2/3;
+  z-index: 1;
+  width: 115%;
+  height: 100%;
+}
+#specs {
+  grid-column: 1/2;
+}
