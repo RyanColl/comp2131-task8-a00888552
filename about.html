@@ -9,9 +9,20 @@
     </p>
     <p>I have integrated my design skills in multiple projects throughout BCIT, which has 
         inspired me to take on more and more projects on my own, just so I can learn!</p>
-    <p>Check out my <b><a href='index.php?profile=projects' class='projects'>projects</a></b> tab if you would like to see more information about the things I am 
+    <p>Check out my <b><a href='' class='projects'>projects</a></b> tab if you would like to see more information about the things I am 
         currently working on!
     </p>
+    <script>
+        $('.projects').click( (e) => {
+          e.preventDefault();
+          $('.projects').attr('id', 'focused')
+          $('.interests').attr('id', '')
+            $('.about').attr('id', '');
+            $('.goals').attr('id', '');
+            $('.div-box').detach();
+            $('.general').load('./projects.html')
+        });
+    </script>
 </div>
 
 

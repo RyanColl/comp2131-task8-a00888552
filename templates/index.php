@@ -15,6 +15,7 @@
             $('.goals').attr('id', '');
             $('.div-box').detach();
             $('.general').load('./about.html')
+            $('.slantedM img').attr('src', './assets/me2.png')
         });
         $('.projects').click( (e) => {
           e.preventDefault();
@@ -57,10 +58,10 @@
             </div>
             <div id="n">
               <div class="nav">
-                <a id='focused' class="about" href="index.php?profile=about"><p>ABOUT ME</p></a>
-                <a class="projects" href="index.php?profile=projects"><p>PROJECTS</p></a>
-                <a class="goals" href="index.php?profile=goals"><p>GOALS</p></a>
-                <a class="interests" href="index.php?profile=interests"><p>INTERESTS</p></a>
+                <a id='focused' class="about" href="#"><p>ABOUT ME</p></a>
+                <a class="projects" href="#"><p>PROJECTS</p></a>
+                <a class="goals" href="#"><p>GOALS</p></a>
+                <a class="interests" href="#"><p>INTERESTS</p></a>
               </div>
             </div>
             
