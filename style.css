@@ -24,9 +24,23 @@ a:visited {color:#24262A;}
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.6fr 0.4fr;
 }
-@media only screen and (min-width: 1420px) {
+/* @media only screen and (min-width: 1420px) {
   #specs {
     grid-column: 1/2;
+  }
+} */
+
+@media only screen and (max-width: 1200px) {
+  .head > h1 {
+    font-size: 1.5rem;
+  }
+  #about-box > h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  #m {
+    grid-column: 3/5;
   }
 }
 .spec {
@@ -80,10 +94,6 @@ a:visited {color:#24262A;}
 a{
   text-decoration: none;
 }
-a:hover {
-  border-bottom: 6px;
-  border-color: #00FFE6;
-}
 .slantedL img {
   padding-bottom: 100%;
  height: 40%;
@@ -133,6 +143,7 @@ a:hover {
   margin: 75px 0 0 50px;
   grid-column: 2/3;
   grid-row: 1/2;
+  z-index: 7;
 }
 #focused {
   transition: border-bottom 2s;
@@ -175,8 +186,10 @@ a:hover {
   overflow: hidden;
 }
 
-.orb:hover {
-  
+#orb1:hover + img {
+  transition: width 3s, height 3s;
+  width: 1050px;
+  height: 1050px;
 }
 .orb > a > img {
   object-fit: cover;
@@ -185,7 +198,7 @@ a:hover {
 #project-box {
   flex-direction: row;
   justify-content: center;
-  padding: 0px 10%;
+  padding: 0px 10% 10% 10%;
 }
 
 

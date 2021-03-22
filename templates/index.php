@@ -82,7 +82,7 @@
       <div class="slantedL">
         
       </div>
-      <div class="slantedM">
+      <div id='m' class="slantedM">
         <img src="./assets/me2.png">
       </div>
       <div class="slantedR">
