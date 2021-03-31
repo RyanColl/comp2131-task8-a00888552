@@ -24,4 +24,4 @@ get_comments();
 get_commenters();
 
 // include the template to display the page
-include 'templates/index.php';
+include 'templates/index1.php';

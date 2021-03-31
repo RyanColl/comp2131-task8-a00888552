@@ -1,0 +1,203 @@
+main {
+    width: auto;
+    height: auto;
+}
+.orb {
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+    overflow: hidden;
+}
+a:hover > #position-1 {
+    background: white;
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+}
+a:hover > #position-2 {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    height: 85%;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+}
+a:hover > #position-3 {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    height: 85%;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+}
+a:hover > #position-4 {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    height: 85%;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+}
+a:hover > #position-5 {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    height: 85%;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+}
+a:hover > #position-6 {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    height: 85%;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+}
+a:hover > #position-7 {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    height: 85%;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 25px;
+    position: absolute;
+}
+#position-1 {
+    z-index: 0;
+    width: 158px;
+    height: 158px;
+    border-radius: 50%;
+    top: 9%;
+    left: 13%;
+    transition: 1.5s;
+}
+.keyframe {
+    animation: jumble1 3s infinite;
+}
+@keyframes jumble1 {
+    from { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+    to   { transform: rotate(-360deg) translateX(300px) rotate(-360deg); }
+    /* 0%   {  transform:translate(0)    }
+    1%   {  transform:translate(-10%, 25%)    }
+    2%   {  transform:translate(-20%, 50%)    }
+    3%   {  transform:translate(-30%, 75%)    }
+    4%   {  transform:translate(-40%, 100%)    }
+    5%   {  transform:translate(-50%, 125%)    }
+    6%   {  transform:translate(-60%, 150%)    }
+    7%   {  transform:translate(-70%, 175%)    }
+    8%   {  transform:translate(-80%, 200%)    }
+    9%   {  transform:translate(-90%, 225%)    }
+    10%   {  transform:translate(-100%, 250%)    }
+    20%   {  transform:translate(-100%, 700%)    }
+    22%   {  transform:translate(-50%, 720%)    }
+    24%   {  transform:translate(0%, 740%)    }
+    26%   {  transform:translate(50%, 770%)    }
+    28%   {  transform:translate(100%, 760%)    }
+    30%   {  transform:translate(150%, 740%)    }
+    32%   {  transform:translate(200%, 720%)    }
+    34%   {  transform:translate(250%, 700%)    }
+    36%   {  transform:translate(300%, 675%)    }
+    38%   {  transform:translate(350%, 650%)    }
+    40%   {  transform:translate(400%, 625%)    }
+    42%   {  transform:translate(450%, 720%)    }
+    44%   {  transform:translate(450%, 700%)    }
+    46%   {  transform:translate(425%, 675%)    }
+    48%   {  transform:translate(400%, 650%)    }
+    50%   {  transform:translate(375%, 625%)    }
+    52%   {  transform:translate(350%, 600%)    }
+    54%   {  transform:translate(300%, 500%)    }
+    56%   {  transform:translate(250%, 400%)    }
+    58%   {  transform:translate(225%, 250%)    }
+    60%   {  transform:translate(200%, 300%)    }
+    62%   {  transform:translate(175%, 350%)    }
+    64%   {  transform:translate(150%, 400%)    }
+    66%   {  transform:translate(125%, 450%)    }
+    68%   {  transform:translate(112.5%, 475%)    }
+    70%   {  transform:translate(100%, 500%)    }
+    72%   {  transform:translate(112.5%, 525%)    }
+    74%   {  transform:translate(125%, 550%)    }
+    76%   {  transform:translate(150%, 600%)    }
+    78%   {  transform:translate(200%, 650%)    }
+    80%   {  transform:translate(250%, 680%)    }
+    82%   {  transform:translate(300%, 700%)    }
+    84%   {  transform:translate(350%, 725%)    }
+    86%   {  transform:translate(400%, 750%)    }
+    88%   {  transform:translate(425%, 725%)    }
+    90%   {  transform:translate(450%, 700%)    }
+    92%   {  transform:translate(475%, 675%)    }
+    94%   {  transform:translate(500%, 650%)    }
+    96%   {  transform:translate(525%, 625%)    }
+    98%   {  transform:translate(650%, 600%)    }
+    100%   {  transform:translate(575%, 575%)    } */
+}
+#position-2 {
+    width: 158px;
+    height: 158px;
+    border-radius: 50%;
+    top: 18%;
+    left: 69%;
+    z-index: 0;
+}
+#position-3 {
+    z-index: 0;
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    top: 28%;
+    left: 23%;
+}
+#position-4 {
+    z-index: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    top: 38%;
+    left: 54%;
+}
+#position-5 {
+    z-index: 0;
+    width: 156px;
+    height: 156px;
+    top: 45%;
+    left: 18%;
+}
+#position-6 {
+    z-index: 0;
+    width: 146px;
+    height: 146px;
+    top: 67%;
+    left: 33%;
+}
+#position-7 {
+    transition: top 3s, left 3s;
+    z-index: 0;
+    width: 172px;
+    height: 172px;
+    top: 55%;
+    left: 72%;
+}

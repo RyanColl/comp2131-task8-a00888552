@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <script>
       $($(document).ready( () => {
+        $.ajaxSetup({ cache: true });
+        
+          $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
+            FB.init({
+              appId: '{your-app-id}',
+              version: 'v2.7' 
+            });     
+            $('#loginbutton,#feedbutton').removeAttr('disabled');
+            FB.getLoginStatus(updateStatusCallback);
+          });
+
         $('.about').click( (e) => {
           e.preventDefault();
           $('.about').attr('id', 'focused')
@@ -24,7 +35,9 @@
             $('.about').attr('id', '');
             $('.goals').attr('id', '');
             $('.div-box').detach();
-            $('.general').load('./projects.html')
+            $('.general').load('./projects.html');
+            $('.slantedM img').attr('src', './assets/me5.png')
+            
         });
         $('.goals').click( (e) => {
           e.preventDefault();
@@ -34,6 +47,7 @@
             $('.projects').attr('id', '');
             $('.div-box').detach();
             $('.general').load('./goals.html')
+            $('.slantedM img').attr('src', './assets/me4.png')
         });
         $('.interests').click( (e) => {
           e.preventDefault();
