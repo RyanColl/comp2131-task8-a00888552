@@ -4,106 +4,35 @@
     <meta charset="utf-8">
     <title>Assignment 8</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script>
-      $($(document).ready( () => {
-        $.ajaxSetup({ cache: true });
-        
-          $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
-            FB.init({
-              appId: '{your-app-id}',
-              version: 'v2.7' 
-            });     
-            $('#loginbutton,#feedbutton').removeAttr('disabled');
-            FB.getLoginStatus(updateStatusCallback);
-          });
-
-        $('.about').click( (e) => {
-          e.preventDefault();
-          $('.about').attr('id', 'focused')
-          $('.interests').attr('id', '')
-            $('.projects').attr('id', '');
-            $('.goals').attr('id', '');
-            $('.div-box').detach();
-            $('.general').load('./about.html')
-            $('.slantedM img').attr('src', './assets/me2.png')
-        });
-        $('.projects').click( (e) => {
-          e.preventDefault();
-          $('.projects').attr('id', 'focused')
-          $('.interests').attr('id', '')
-            $('.about').attr('id', '');
-            $('.goals').attr('id', '');
-            $('.div-box').detach();
-            $('.general').load('./projects.html');
-            $('.slantedM img').attr('src', './assets/me5.png')
-            
-        });
-        $('.goals').click( (e) => {
-          e.preventDefault();
-          $('.goals').attr('id', 'focused')
-          $('.interests').attr('id', '')
-            $('.about').attr('id', '');
-            $('.projects').attr('id', '');
-            $('.div-box').detach();
-            $('.general').load('./goals.html')
-            $('.slantedM img').attr('src', './assets/me4.png')
-        });
-        $('.interests').click( (e) => {
-          e.preventDefault();
-          $('.interests').attr('id', 'focused')
-            $('.about').attr('id', '');
-            $('.projects').attr('id', '');
-            $('.goals').attr('id', '');
-            $('.div-box').detach();
-            $('.general').load('./interests.html')
-        });
-      }))
-    </script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="classnames.css">
+    <script src="./jQuery.js"></script>
+    <script src="./classes-jq.js"></script>
   </head>
   <body>
-    <div id="main">
-      <?php // load_all(); ?>
-      <div class='spec' id="specs">
-            <div class="head">
-              <a href=''><img src='./assets/uxui.png'></a>
-              <h3><i>RYAN COLLICUTT</i></h3>
-              <h1><i>FULL STACK WEB DEVELOPER</i></h1>
-            </div>
-            <div id="n">
-              <div class="nav">
-                <a id='focused' class="about" href="#"><p>ABOUT ME</p></a>
-                <a class="projects" href="#"><p>PROJECTS</p></a>
-                <a class="goals" href="#"><p>GOALS</p></a>
-                <a class="interests" href="#"><p>INTERESTS</p></a>
-              </div>
-            </div>
-            
-            <!-- to be loaded in -->
-            <div class="general">
-
-            </div>
-            <script>
-              $('.general').load('./about.html')
-            </script>
-      </div>
-      <div id="slanted">
-        <div class="left"></div>
-        <div class="middle"></div>
-        <div class="right"></div>
-        <div class="rightright"></div>
-      </div>
-      <div class="slantedL">
-        
-      </div>
-      <div id='m' class="slantedM">
-        <img src="./assets/me2.png">
-      </div>
-      <div class="slantedR">
-        
-      </div>
-    </div>
-  
+    <img class="bgimg" id="blurrs1" src="./assets/me2.png">
+    <img class="bgimg" id="blurrs2" src="./assets/orbs_canva.png">
+    <img class="bgimg" id="blurrs3" src="./assets/orbs_canva-flipped.png">
+    <img class="bgimg" id="blurrs4" src="./assets/orbs_canva180-flipped.png">
+    <header>
+        <div class="index"><a href="#"><img src="./assets/three-lines.png"></a></div>
+        <div class="nav">
+            <a id='focused' class="about" href="#"><p>ABOUT ME</p></a>
+            <a class="projects" href="#"><p>PROJECTS</p></a>
+            <a class="goals" href="#"><p>GOALS</p></a>
+            <a class="interests" href="#"><p>INTERESTS</p></a>
+        </div>
+    </header>
+    <main>
+        <a href="https://hackthebreak2021.herokuapp.com/"><div class="orb" id="position-1"><img class="links" src="./assets/cagov.png"></div></a>
+        <a href="https://github.com/RyanColl"><div class="orb" id="position-2"><img class="links" src="./assets/git.png"></div></a>
+        <a href="https://linkedin.com/in/rcollicutt-react-developer"><div class="orb" id="position-3"><img class="links" id="ln" src="./assets/Dark-themed-Linkedin.png"></div></a>
+        <!-- <a><div class="orb" id="position-4"><img class="links" src=""></div></a>
+        <a><div class="orb" id="position-5"><img class="links" src=""></div></a>
+        <a><div class="orb" id="position-6"><img class="links" src=""></div></a>
+        <a><div class="orb" id="position-7"><img class="links" src=""></div></a> -->
+    </main>
+    
     <!-- <?php
       // the_comments();
       // the_commenters();

@@ -1,11 +1,15 @@
 
 body {
+    overflow: hidden;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header {
+    position: absolute;
+    top: 5px;
+    left: 0px;
     background: rgba(24,160,251,0.38);
     height: 120%;
-    height: 120px;
+    height: 140px;
     display: grid;
     grid-template-columns: 1fr 9fr;
 }
@@ -24,17 +28,17 @@ header {
 }
 .nav > a {
     border-bottom: 1px solid #24262A;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     transition: border-bottom 0.5s, font-size 0.5s;
 }
 .nav > a:hover {
     border-bottom: 3px solid #00FFE6;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
 }
 a{
     text-decoration: none;
 }   
-img {
+.index > a > img {
     width: 60%;
 }
 .index {
@@ -47,8 +51,27 @@ img {
     transition: font-size 2s;
     border-bottom: 3.5px solid #00FFE6;
     z-index: 5;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
 }
 a:focus {
     outline: none;
+}
+/* #blurrs1 {
+    opacity: 0;
+}
+#blurrs2 {
+    opacity: 0;
+}
+#blurrs3 {
+    opacity: 0;
+}
+#blurrs4 {
+    opacity: 0;
+} */
+.bgimg {
+    width: 100%;
+    object-fit: cover;
+}
+.links {
+
 }
