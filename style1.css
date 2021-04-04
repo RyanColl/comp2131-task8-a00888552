@@ -70,8 +70,11 @@ a:focus {
 } */
 .bgimg {
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;   
 }
 .links {
 
 }
+/* #blurrs1 {
+    width: 95%;
+} */

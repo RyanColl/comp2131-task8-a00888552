@@ -14,14 +14,33 @@
     </p>
     <script>
         $('.projects').click( (e) => {
-          e.preventDefault();
-          $('.projects').attr('id', 'focused')
-          $('.interests').attr('id', '')
+            projectsClick(e);
+        });
+        function projectsClick(e) {
+            e.preventDefault();
+            $('.orb').fadeOut();
+            $(".bgimg").fadeOut()
+            $('#blurrs2').fadeIn('slow', () => {
+                $('#position-1').fadeIn('slow', () => {
+                $('#position-2').fadeIn('slow', () => {
+                    $('#position-3').fadeIn('slow', () => {
+                    $('#position-4').fadeIn('slow', () => {
+                        $('#position-5').fadeIn('slow', () => {
+                        $('#position-6').fadeIn('slow', () => {
+                            $('#position-7').fadeIn('slow')
+                        })
+                        })
+                    })
+                    })
+                })
+                });
+            })
+            $('.projects').attr('id', 'focused')
+            $('.interests').attr('id', '')
             $('.about').attr('id', '');
             $('.goals').attr('id', '');
             $('.div-box').detach();
-            $('.general').load('./projects.html')
-        });
+        }
     </script>
 </div>
 
